@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CampusPulse Planner
 
 CampusPulse Planner is a Flutter app for students to manage classes, assignments, exams, reminders, and daily academic overview in one place.
@@ -28,3 +29,6 @@ flutter build apk --release
 APK output:
 
 `artifacts/flutter_mobile/build/app/outputs/flutter-apk/app-release.apk`
+=======
+# CampusPulse-Planner
+>>>>>>> 8509063902fcd7e19f8627c9b63e9aa5088a2a5b
