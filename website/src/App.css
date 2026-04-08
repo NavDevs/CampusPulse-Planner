@@ -516,24 +516,137 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.2; }
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+
+/* ── Tablet ── */
 @media (max-width: 1024px) {
-  .hero-grid     { grid-template-columns: 1fr; gap: 48px; }
-  .hero-visual   { display: flex; justify-content: center; }
-  .features-grid { grid-template-columns: repeat(2, 1fr); }
-  .ai-grid       { grid-template-columns: 1fr; gap: 48px; }
-  .preview-grid  { grid-template-columns: repeat(2, 1fr); }
-  .phone-deco--circle { width: 120px; height: 120px; }
+  .hero-grid      { grid-template-columns: 1fr; gap: 48px; }
+  .hero-visual    { display: flex; justify-content: center; }
+  .hero-text      { text-align: center; }
+  .hero-badge     { margin-left: auto; margin-right: auto; }
+  .hero-actions   { justify-content: center; }
+  .hero-stats     { justify-content: center; }
+
+  .features-grid  { grid-template-columns: repeat(2, 1fr); }
+  .ai-grid        { grid-template-columns: 1fr; gap: 48px; }
+  .ai-visual      { order: -1; }
+  .preview-grid   { grid-template-columns: repeat(2, 1fr); }
+
+  .phone-deco--circle { width: 120px; height: 120px; top: -25px; right: -25px; }
+  .phone-deco--tri    { right: -30px; }
 }
 
+/* ── Mobile ── */
 @media (max-width: 640px) {
-  .section      { padding: 64px 0; }
-  .nav-links    { display: none; }
-  .features-grid { grid-template-columns: 1fr; }
-  .preview-grid  { grid-template-columns: 1fr; }
-  .hero-stats    { flex-wrap: wrap; gap: 16px; }
-  .download-card { padding: 48px 24px; }
-  .btn-primary   { box-shadow: 2px 2px 0 var(--fg); }
-  .phone         { width: 240px; }
-  .hero-heading  { font-size: 34px; }
-  .hero-actions  { flex-direction: column; }
+  .container       { padding: 0 16px; }
+  .section         { padding: 56px 0; }
+
+  /* Navbar */
+  .nav-links       { display: none; }
+  .navbar-inner    { height: 56px; gap: 12px; }
+  .logo-icon       { font-size: 22px; }
+  .logo-text       { font-size: 18px; }
+  .btn-sm          { padding: 7px 14px; font-size: 12px; }
+
+  /* Hero */
+  .hero            { padding-top: 48px; }
+  .hero-grid       { gap: 36px; padding-bottom: 48px; }
+  .hero-heading    { font-size: clamp(28px, 8vw, 38px); }
+  .hero-sub        { font-size: 15px; margin-bottom: 24px; }
+  .hero-badge      { font-size: 11px; padding: 5px 12px; }
+  .hero-actions    { flex-direction: column; gap: 12px; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .hero-stats      { flex-wrap: wrap; gap: 16px; justify-content: center; }
+  .stat-num        { font-size: 22px; }
+  .stat-label      { font-size: 11px; }
+  .stat-divider    { height: 28px; }
+
+  /* Phone mockup */
+  .phone           { width: 220px; padding: 16px 12px; }
+  .phone-stats     { gap: 6px; }
+  .pstat           { padding: 8px 4px; }
+  .pstat-num        { font-size: 16px; }
+  .pstat-lbl        { font-size: 8px; }
+  .pmock-card      { padding: 8px; gap: 8px; }
+  .pmock-title     { font-size: 11px; }
+  .pmock-sub       { font-size: 9px; }
+  .phone-deco--circle { width: 90px; height: 90px; top: -20px; right: -20px; }
+  .phone-deco--dots   { width: 80px; height: 80px; left: -20px; bottom: -10px; }
+  .phone-deco--tri    { right: -25px; bottom: 40px; }
+
+  /* Squiggle */
+  .squiggle-divider { height: 40px; }
+
+  /* Buttons */
+  .btn-primary     { box-shadow: 3px 3px 0 var(--fg); }
+  .btn-lg          { padding: 12px 24px; font-size: 15px; }
+  .btn-xl          { padding: 14px 28px; font-size: 16px; }
+
+  /* Section headers */
+  .section-header  { margin-bottom: 40px; }
+  .section-title   { font-size: clamp(24px, 6vw, 36px); }
+  .section-sub     { font-size: 15px; }
+  .eyebrow         { font-size: 11px; }
+
+  /* Features */
+  .features-grid   { grid-template-columns: 1fr; gap: 16px; }
+  .fcard           { padding: 24px 20px; box-shadow: 3px 3px 0 var(--fg); }
+  .fcard:hover     { box-shadow: 5px 5px 0 var(--fg); }
+  .fcard-icon      { width: 44px; height: 44px; font-size: 20px; }
+  .fcard-title     { font-size: 16px; }
+  .fcard-desc      { font-size: 13px; }
+
+  /* AI Section */
+  .ai-card         { padding: 18px; box-shadow: 5px 5px 0 var(--fg); }
+  .ai-card-title   { font-size: 18px; }
+  .ai-summary      { padding: 12px; }
+  .ai-summary-text { font-size: 12px; }
+  .ai-badge        { font-size: 10px; padding: 2px 8px; }
+  .ai-item         { padding: 10px; gap: 8px; }
+  .ai-item-title   { font-size: 12px; }
+  .ai-item-sub     { font-size: 10px; }
+  .ai-tag          { font-size: 9px; padding: 2px 6px; }
+  .ai-desc         { font-size: 15px; }
+  .ai-list li      { font-size: 14px; gap: 10px; }
+  .ai-check        { width: 22px; height: 22px; font-size: 10px; }
+
+  /* Preview */
+  .preview-grid    { grid-template-columns: 1fr; gap: 16px; }
+  .preview-card    { padding: 28px 20px; box-shadow: 3px 3px 0 var(--fg); }
+  .preview-emoji   { font-size: 36px; }
+  .preview-label   { font-size: 18px; }
+  .preview-desc    { font-size: 13px; }
+
+  /* Download */
+  .download-card   { padding: 40px 20px; border-radius: 20px; box-shadow: 6px 6px 0 var(--yellow); }
+  .download-title  { margin-bottom: 12px; }
+  .download-sub    { font-size: 14px; margin-bottom: 28px; }
+  .download-note   { font-size: 11px; }
+  .download-blob--1 { width: 180px; height: 180px; top: -50px; left: -40px; }
+  .download-blob--2 { width: 120px; height: 120px; bottom: -30px; right: -20px; }
+  .download-section .btn-primary { font-size: 16px; padding: 14px 28px; }
+
+  /* Footer */
+  .footer          { padding: 40px 0 24px; }
+  .footer-links    { gap: 16px; }
+  .footer-links a  { font-size: 13px; }
+  .footer-tagline  { font-size: 13px; }
+  .footer-copy     { font-size: 11px; }
+
+  /* Background shapes – scale down so they don't overflow */
+  .shape-1 { width: 100px; height: 100px; left: -30px; }
+  .shape-2 { width: 50px;  height: 50px; }
+  .shape-3 { width: 120px; height: 120px; left: -40px; }
+  .shape-4 { width: 45px;  height: 45px; }
+  .shape-6 { width: 80px;  height: 80px; right: -15px; }
+}
+
+/* ── Very small screens ── */
+@media (max-width: 380px) {
+  .container       { padding: 0 12px; }
+  .hero-heading    { font-size: 26px; }
+  .phone           { width: 200px; }
+  .hero-stats      { gap: 12px; }
+  .stat-num        { font-size: 20px; }
+  .download-card   { padding: 32px 16px; }
+  .fcard           { padding: 20px 16px; }
 }
