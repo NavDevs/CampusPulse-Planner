@@ -2,6 +2,8 @@
 
 CampusPulse Planner is a smart academic sidekick designed to keep your classes, assignments, and exams perfectly organized. With our latest **Premium UI Overhaul** and the newly integrated **Pulse AI Priority Engine**, staying on top of your semester has never been easier.
 
+#LIVE WEBSITE TO DOWNLOAD APP : https://campus-pulse-planner-fa9n.vercel.app/#features
+
 ## ✨ Key Features
 - **Smart Dashboard**: See today's schedule, pending assignments, and AI insights at a glance.
 - **Timetable Manager**: Organize your weekly classes by day, complete with course info and room numbers.
