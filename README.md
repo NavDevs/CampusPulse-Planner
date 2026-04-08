@@ -1,34 +1,37 @@
-<<<<<<< HEAD
-# CampusPulse Planner
+# CampusPulse Planner 📚🎓
 
-CampusPulse Planner is a Flutter app for students to manage classes, assignments, exams, reminders, and daily academic overview in one place.
+CampusPulse Planner is a smart academic sidekick designed to keep your classes, assignments, and exams perfectly organized. With our latest **Premium UI Overhaul** and the newly integrated **Pulse AI Priority Engine**, staying on top of your semester has never been easier.
 
-## Features
+## ✨ Key Features
+- **Smart Dashboard**: See today's schedule, pending assignments, and AI insights at a glance.
+- **Timetable Manager**: Organize your weekly classes by day, complete with course info and room numbers.
+- **Assignment Tracker**: Keep track of deadlines with intelligent priority filtering.
+- **Exam Planner**: Schedule exams and set custom reminder alerts.
+- **Pulse AI Priority Engine**: A *100% offline, on-device AI agent* that ranks your tasks by urgency (deadlines × importance) and provides actionable suggestions.
 
-- Dashboard with today's classes, pending assignments, and upcoming exams
-- Timetable management (add, edit, delete by day and time)
-- Assignment tracking with priority and completion status
-- Exam planner with reminder-day options
-- Settings for notifications, class reminder timing, and theme mode
-- Local persistence using `shared_preferences`
+## 🎨 Premium Design System
+The app features a custom "Glassmorphism" UI with deep indigo primary colors, dynamic gradients, and custom color-coded priority badges. We've also included comprehensive support for a dark/light mode toggle.
 
-## Project Structure
+## 🌐 Promotional Website
+A fully responsive promotional landing page is included in the `website/` directory. Built using **React, Vite, and Tailwind CSS** adhering to a Playful Geometric design philosophy!
 
-- `artifacts/flutter_mobile/` - main Flutter application source
+To run the website locally:
+```bash
+cd website
+npm install
+npm run dev
+```
 
-## Build APK
-
-From the project root:
-
+## 🚀 Building the Android App
+The app has been modularized and properly structured under `artifacts/flutter_mobile`. To compile your own APK:
 ```bash
 cd artifacts/flutter_mobile
 flutter pub get
 flutter build apk --release
 ```
 
-APK output:
-
+APK Output Configuration:
 `artifacts/flutter_mobile/build/app/outputs/flutter-apk/app-release.apk`
-=======
-# CampusPulse-Planner
->>>>>>> 8509063902fcd7e19f8627c9b63e9aa5088a2a5b
+
+## 🤝 Contributing
+Contributions are always welcome. Please consider leaving a ⭐ if you found this project helpful!
